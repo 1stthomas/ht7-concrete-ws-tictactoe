@@ -40,7 +40,7 @@ class Controller extends Package
     ];
     protected $pkgAutoloaderMapCoreExtensions = true;
     protected $pkgHandle = 'ht7_c5_ws_tictactoe';
-    protected $pkgVersion = '0.1.0';
+    protected $pkgVersion = '0.1.1';
 
     /**
      * @var \Concrete\Core\Entity\Package
