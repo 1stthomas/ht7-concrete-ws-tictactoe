@@ -1,0 +1,335 @@
+#ht7-tictactoe-hof {
+    ul.ht7-games-item-list {
+        > li {
+            &.item, &.title {
+                div {
+                    float: left;
+                    &.name {
+                        min-width: 200px;
+                        /*width: 200px;*/
+                    }
+                    &.ranking {
+                        width: 55px;
+                    }
+                    &.stats {
+                        float: right;
+                        width: 200px;
+                        span {
+                            &.quotation {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#ht7-tictactoe-lobby {
+    h2, h3 {
+        margin-top: 0;
+    }
+    h3 {
+        border-bottom: 1px solid #667;
+        font-size: 16px;
+    }
+    > header {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    > .ht7-tictactoe {
+        > header {
+            padding-top: 0;
+        }
+        .container-action {
+            text-align: right;
+            a {
+                &:not(:last-child) {
+                    @media (min-width: 992px) {
+                        margin-bottom: 5px;
+                    }
+                    @media (min-width: 1200px) {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+        .container-games {
+            .alert {
+                margin: 0;
+            }
+            .well {
+                padding: 5px;
+            }
+            ul.game-list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                > li {
+                    /*                &.empty-list {
+                                        border: 1px solid
+                                    }*/
+                }
+            }
+        }
+    }
+}
+#ht7-tictactoe-mygames {
+    ul.game-list {
+        list-style: none;
+        padding: 5px;
+        > li {
+            &:after, &:before {
+                content: "";
+                display: table;
+            }
+            &:after {
+                clear: both;
+            }
+            border-radius: 4px;
+            margin-bottom: 5px;
+            &:last-child {
+                margin: 0;
+            }
+            &:not(.alert) {
+                background-color: #fff;
+                border: 1px solid #e3e3e3;
+                padding: 5px 10px;
+            }
+            span {
+                display: block;
+                float: left;
+                &.game-action {
+                    float: right;
+                    text-align: right;
+                    width: 60px;
+                }
+                &.no {
+                    width: 30px;
+                }
+                &.player-1, &.player-2 {
+                    width: 75px;
+                }
+                &.vs {
+                    width: 30px;
+                }
+                &.winner {
+                    width: 125px;
+                    &.is-you {
+                        color: green;
+                    }
+                    &:not(.is-you) {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+#ht7-ws-tictactoe-overlay {
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    .bg {
+        background-color: red;
+        bottom: 0;
+        left: 0;
+        opacity: 0.2;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+    .text-container {
+        background-color: #efefef;
+        border-radius: 4px;
+        bottom: 125px;
+        box-shadow: 2px 2px 4px #667;
+        left: 15px;
+        position: absolute;
+        right: 15px;
+        top: 125px;
+        z-index: 2;
+        .text {
+            font-size: 18px;
+            padding: 15px;
+            text-align: center;
+        }
+    }
+    .loader-container {
+        font-size: 36px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+#ht7-tictactoe-playground {
+    > header {
+        border: none;
+    }
+    #ht7-ws-tictactoe {
+        margin-bottom: 15px;
+        #ht7-tictactoe-players {
+            .players {
+                ul.well {
+                    list-style: none;
+                    padding: 5px;
+                    > li {
+                        background-color: #fff;
+                        border: 1px solid #e3e3e3;
+                        border-radius: 4px;
+                        margin-bottom: 5px;
+                        padding: 5px 10px;
+                        &.your-turn {
+                            .username {
+                                color: red;
+                                text-shadow: 1px 1px 5px #44f;
+                            }
+                        }
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .ht7-tictactoe {
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            width: 300px;
+            table {
+                &.game {
+                    bottom: 0;
+                    height: 100%;
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    table-layout: fixed;
+                    top: 0;
+                    width: 100%;
+                    &.layout-open {
+                        tr {
+                            &:first-child {
+                                td {
+                                    border-top: none;
+                                }
+                            }
+                            &:last-child {
+                                td {
+                                    border-bottom: none;
+                                }
+                            }
+                            td {
+                                &:first-child {
+                                    border-left: none;
+                                }
+                                &:last-child {
+                                    border-right: none;
+                                }
+                            }
+                        }
+                    }
+                    &.shadowed {
+                        .fa {
+                            text-shadow: 3px 3px 4px #ccd;
+                        }
+                    }
+                    &.your-turn {
+                        tr {
+                            td {
+                                &:not(.occupied) {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                    tr {
+                        height: 33.33333333%;
+                        td {
+                            border: 5px solid #333;
+                            min-width: 50px;
+                            width: 33%;
+                            &.occupied {
+                                position: relative;
+                                .fa, .fa-solid {
+                                    bottom: 25px;
+                                    font-size: 46px;
+                                    left: 25px;
+                                    position: absolute;
+                                    right: 25px;
+                                    top: 25px;
+                                    text-shadow: 1px 1px 3px black;
+                                    &.fa-heart, &.fa-circle {
+                                        color: red;
+                                    }
+                                    &.fa-spade {
+                                        color: #333;
+                                    }
+                                    &.fa-times {
+                                        color: #333;
+                                        font-size: 64px;
+                                        margin-top: -11px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.ht7-game-room {
+    #ht7-game-container {
+        .settings-personal {
+            ul.players {
+                list-style: none;
+                &.well {
+                    height: 84px;
+                    padding: 5px;
+                }
+                li {
+                    background-color: #fff;
+                    border: 1px solid #e3e3e3;
+                    border-radius: 4px;
+                    padding: 5px 10px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+.ht7-games {
+    ul.ht7-games-item-list {
+        list-style: none;
+        padding: 5px;
+        > li {
+            &.alert {
+                margin: 0;
+            }
+            &.item {
+                background-color: #fff;
+                border: 1px solid #e3e3e3;
+                border-radius: 4px;
+                margin-bottom: 5px;
+                padding: 5px 10px;
+            }
+            &.title {
+                h4 {
+                    border-bottom: 1px solid #667;
+                    margin-top: 0;
+                    padding: 5px 10px;
+                    > div {
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+    }
+}

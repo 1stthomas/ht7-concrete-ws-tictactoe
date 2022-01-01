@@ -1,0 +1,291 @@
+#ht7-tictactoe-hof ul.ht7-games-item-list > li.item div,
+#ht7-tictactoe-hof ul.ht7-games-item-list > li.title div {
+  float: left;
+}
+#ht7-tictactoe-hof ul.ht7-games-item-list > li.item div.name,
+#ht7-tictactoe-hof ul.ht7-games-item-list > li.title div.name {
+  min-width: 200px;
+  /*width: 200px;*/
+}
+#ht7-tictactoe-hof ul.ht7-games-item-list > li.item div.ranking,
+#ht7-tictactoe-hof ul.ht7-games-item-list > li.title div.ranking {
+  width: 55px;
+}
+#ht7-tictactoe-hof ul.ht7-games-item-list > li.item div.stats,
+#ht7-tictactoe-hof ul.ht7-games-item-list > li.title div.stats {
+  float: right;
+  width: 200px;
+}
+#ht7-tictactoe-hof ul.ht7-games-item-list > li.item div.stats span.quotation,
+#ht7-tictactoe-hof ul.ht7-games-item-list > li.title div.stats span.quotation {
+  font-weight: bold;
+}
+#ht7-tictactoe-lobby h2,
+#ht7-tictactoe-lobby h3 {
+  margin-top: 0;
+}
+#ht7-tictactoe-lobby h3 {
+  border-bottom: 1px solid #667;
+  font-size: 16px;
+}
+#ht7-tictactoe-lobby > header {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+#ht7-tictactoe-lobby > .ht7-tictactoe > header {
+  padding-top: 0;
+}
+#ht7-tictactoe-lobby > .ht7-tictactoe .container-action {
+  text-align: right;
+}
+@media (min-width: 992px) {
+  #ht7-tictactoe-lobby > .ht7-tictactoe .container-action a:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  #ht7-tictactoe-lobby > .ht7-tictactoe .container-action a:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+#ht7-tictactoe-lobby > .ht7-tictactoe .container-games .alert {
+  margin: 0;
+}
+#ht7-tictactoe-lobby > .ht7-tictactoe .container-games .well {
+  padding: 5px;
+}
+#ht7-tictactoe-lobby > .ht7-tictactoe .container-games ul.game-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#ht7-tictactoe-lobby > .ht7-tictactoe .container-games ul.game-list > li {
+  /*                &.empty-list {
+                                        border: 1px solid
+                                    }*/
+}
+#ht7-tictactoe-mygames ul.game-list {
+  list-style: none;
+  padding: 5px;
+}
+#ht7-tictactoe-mygames ul.game-list > li {
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+#ht7-tictactoe-mygames ul.game-list > li:after,
+#ht7-tictactoe-mygames ul.game-list > li:before {
+  content: "";
+  display: table;
+}
+#ht7-tictactoe-mygames ul.game-list > li:after {
+  clear: both;
+}
+#ht7-tictactoe-mygames ul.game-list > li:last-child {
+  margin: 0;
+}
+#ht7-tictactoe-mygames ul.game-list > li:not(.alert) {
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  padding: 5px 10px;
+}
+#ht7-tictactoe-mygames ul.game-list > li span {
+  display: block;
+  float: left;
+}
+#ht7-tictactoe-mygames ul.game-list > li span.game-action {
+  float: right;
+  text-align: right;
+  width: 60px;
+}
+#ht7-tictactoe-mygames ul.game-list > li span.no {
+  width: 30px;
+}
+#ht7-tictactoe-mygames ul.game-list > li span.player-1,
+#ht7-tictactoe-mygames ul.game-list > li span.player-2 {
+  width: 75px;
+}
+#ht7-tictactoe-mygames ul.game-list > li span.vs {
+  width: 30px;
+}
+#ht7-tictactoe-mygames ul.game-list > li span.winner {
+  width: 125px;
+}
+#ht7-tictactoe-mygames ul.game-list > li span.winner.is-you {
+  color: green;
+}
+#ht7-tictactoe-mygames ul.game-list > li span.winner:not(.is-you) {
+  color: red;
+}
+#ht7-ws-tictactoe-overlay {
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#ht7-ws-tictactoe-overlay .bg {
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  opacity: 0.2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+#ht7-ws-tictactoe-overlay .text-container {
+  background-color: #efefef;
+  border-radius: 4px;
+  bottom: 125px;
+  box-shadow: 2px 2px 4px #667;
+  left: 15px;
+  position: absolute;
+  right: 15px;
+  top: 125px;
+  z-index: 2;
+}
+#ht7-ws-tictactoe-overlay .text-container .text {
+  font-size: 18px;
+  padding: 15px;
+  text-align: center;
+}
+#ht7-ws-tictactoe-overlay .loader-container {
+  font-size: 36px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#ht7-tictactoe-playground > header {
+  border: none;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe {
+  margin-bottom: 15px;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe #ht7-tictactoe-players .players ul.well {
+  list-style: none;
+  padding: 5px;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe #ht7-tictactoe-players .players ul.well > li {
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe #ht7-tictactoe-players .players ul.well > li.your-turn .username {
+  color: red;
+  text-shadow: 1px 1px 5px #44f;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe #ht7-tictactoe-players .players ul.well > li:last-child {
+  margin: 0;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe {
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 300px;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  table-layout: fixed;
+  top: 0;
+  width: 100%;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game.layout-open tr:first-child td {
+  border-top: none;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game.layout-open tr:last-child td {
+  border-bottom: none;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game.layout-open tr td:first-child {
+  border-left: none;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game.layout-open tr td:last-child {
+  border-right: none;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game.shadowed .fa {
+  text-shadow: 3px 3px 4px #ccd;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game.your-turn tr td:not(.occupied) {
+  cursor: pointer;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game tr {
+  height: 33.33333333%;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game tr td {
+  border: 5px solid #333;
+  min-width: 50px;
+  width: 33%;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game tr td.occupied {
+  position: relative;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game tr td.occupied .fa,
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game tr td.occupied .fa-solid {
+  bottom: 25px;
+  font-size: 46px;
+  left: 25px;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  text-shadow: 1px 1px 3px black;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game tr td.occupied .fa.fa-heart,
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game tr td.occupied .fa-solid.fa-heart,
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game tr td.occupied .fa.fa-circle,
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game tr td.occupied .fa-solid.fa-circle {
+  color: red;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game tr td.occupied .fa.fa-spade,
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game tr td.occupied .fa-solid.fa-spade {
+  color: #333;
+}
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game tr td.occupied .fa.fa-times,
+#ht7-tictactoe-playground #ht7-ws-tictactoe .ht7-tictactoe table.game tr td.occupied .fa-solid.fa-times {
+  color: #333;
+  font-size: 64px;
+  margin-top: -11px;
+}
+.ht7-game-room #ht7-game-container .settings-personal ul.players {
+  list-style: none;
+}
+.ht7-game-room #ht7-game-container .settings-personal ul.players.well {
+  height: 84px;
+  padding: 5px;
+}
+.ht7-game-room #ht7-game-container .settings-personal ul.players li {
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+.ht7-games ul.ht7-games-item-list {
+  list-style: none;
+  padding: 5px;
+}
+.ht7-games ul.ht7-games-item-list > li.alert {
+  margin: 0;
+}
+.ht7-games ul.ht7-games-item-list > li.item {
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+}
+.ht7-games ul.ht7-games-item-list > li.title h4 {
+  border-bottom: 1px solid #667;
+  margin-top: 0;
+  padding: 5px 10px;
+}
+.ht7-games ul.ht7-games-item-list > li.title h4 > div {
+  line-height: 1;
+}

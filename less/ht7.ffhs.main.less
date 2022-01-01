@@ -1,0 +1,101 @@
+section.ht7-ffhs-main {
+    h3 {
+        color: #286090;
+    }
+    .btn {
+        &.btn-primary {
+            &.game-action {
+                color: #0cf;
+                &:hover {
+                    color: #abddff;
+                }
+            }
+        }
+    }
+    .ht7-body-overlay {
+        display: none;
+    }
+    > header {
+        border: none;
+        h1 {
+            margin: 0;
+        }
+    }
+    &#ht7-tictactoe-intro {
+        > header, > article > footer, > article > header, > article > section {
+            text-align: center;
+        }
+        > article {
+            > section {}
+            > footer {
+                padding-bottom: 30px;
+                padding-top: 30px;
+            }
+            > header {
+                border: none;
+                padding-bottom: 0;
+                padding-top: 0;
+                h2 {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+div.ui-dialog {
+    &.ui-widget {
+        .ui-dialog-titlebar {
+            background-color: #414d59;
+            padding-left: 7px;
+            .ui-button {
+                right: 2px;
+            }
+            .ui-dialog-title {
+                color: #97aabc;
+            }
+        }
+        .btn {
+            border-radius: 20px;
+        }
+    }
+}
+div.ccm-page {
+    > header {
+        display: none;
+    }
+    > main {
+        padding-bottom: 30px;
+    }
+    header {
+        h1, h2, h3, h4 {
+            &.naved {
+                &:after, &:before {
+                    display: table;
+                    content: " ";
+                }
+                &:after {
+                    clear: both;
+                }
+                .links {
+                    float: right;
+                    nav.ht7-ws-ttt-nav-meta {
+                        float: right;
+                        font-size: 0.75em;
+                        ul {
+                            margin: 0;
+                            li {
+                                padding: 0;
+                                a {
+                                    padding-right: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #footer-theme {
+        display: none;
+    }
+}

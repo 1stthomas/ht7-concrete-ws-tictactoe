@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+    <singlepages>
+        <page
+            name="Tic Tac Toe"
+            path="/tictactoe"
+            filename="/tictactoe.php"
+            pagetype=""
+            description="The starting page of the tictactoe game."
+            package="ht7_c5_ws_tictactoe"
+        >
+        </page>
+        <page
+            name="Game Lobby"
+            path="/tictactoe/lobby"
+            filename="/tictactoe/lobby.php"
+            pagetype=""
+            description="The game lobby with a chat."
+            package="ht7_c5_ws_tictactoe"
+        >
+        </page>
+        <page
+            name="Game"
+            path="/tictactoe/game"
+            filename="/tictactoe/game.php"
+            pagetype=""
+            description="The game page with a chat."
+            package="ht7_c5_ws_tictactoe"
+        >
+        </page>
+        <page
+            name="ht7 TicTacToe"
+            path="/dashboard/ht7/games/tictactoe"
+            filename="/dashboard/ht7/games/tictactoe.php"
+            pagetype=""
+            description="The tic tac toe game"
+            package="ht7_c5_ws_tictactoe"
+        >
+        </page>
+        <page
+            name="Hall of Fame"
+            path="/tictactoe/hof"
+            filename="/tictactoe/hof.php"
+            pagetype=""
+            description="The hall of fame page."
+            package="ht7_c5_ws_tictactoe"
+        >
+        </page>
+        <page
+            name="My Games"
+            path="/tictactoe/mygames"
+            filename="/tictactoe/mygames.php"
+            pagetype=""
+            description="The my games page."
+            package="ht7_c5_ws_tictactoe"
+        >
+        </page>
+    </singlepages>
+</concrete5-cif>

@@ -1,0 +1,106 @@
+section.ht7-ffhs-main h3 {
+  color: #286090;
+}
+section.ht7-ffhs-main .btn.btn-primary.game-action {
+  color: #0cf;
+}
+section.ht7-ffhs-main .btn.btn-primary.game-action:hover {
+  color: #abddff;
+}
+section.ht7-ffhs-main .ht7-body-overlay {
+  display: none;
+}
+section.ht7-ffhs-main > header {
+  border: none;
+}
+section.ht7-ffhs-main > header h1 {
+  margin: 0;
+}
+section.ht7-ffhs-main#ht7-tictactoe-intro > header,
+section.ht7-ffhs-main#ht7-tictactoe-intro > article > footer,
+section.ht7-ffhs-main#ht7-tictactoe-intro > article > header,
+section.ht7-ffhs-main#ht7-tictactoe-intro > article > section {
+  text-align: center;
+}
+section.ht7-ffhs-main#ht7-tictactoe-intro > article > footer {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+section.ht7-ffhs-main#ht7-tictactoe-intro > article > header {
+  border: none;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+section.ht7-ffhs-main#ht7-tictactoe-intro > article > header h2 {
+  margin-top: 0;
+}
+div.ui-dialog.ui-widget .ui-dialog-titlebar {
+  background-color: #414d59;
+  padding-left: 7px;
+}
+div.ui-dialog.ui-widget .ui-dialog-titlebar .ui-button {
+  right: 2px;
+}
+div.ui-dialog.ui-widget .ui-dialog-titlebar .ui-dialog-title {
+  color: #97aabc;
+}
+div.ui-dialog.ui-widget .btn {
+  border-radius: 20px;
+}
+div.ccm-page > header {
+  display: none;
+}
+div.ccm-page > main {
+  padding-bottom: 30px;
+}
+div.ccm-page header h1.naved:after,
+div.ccm-page header h2.naved:after,
+div.ccm-page header h3.naved:after,
+div.ccm-page header h4.naved:after,
+div.ccm-page header h1.naved:before,
+div.ccm-page header h2.naved:before,
+div.ccm-page header h3.naved:before,
+div.ccm-page header h4.naved:before {
+  display: table;
+  content: " ";
+}
+div.ccm-page header h1.naved:after,
+div.ccm-page header h2.naved:after,
+div.ccm-page header h3.naved:after,
+div.ccm-page header h4.naved:after {
+  clear: both;
+}
+div.ccm-page header h1.naved .links,
+div.ccm-page header h2.naved .links,
+div.ccm-page header h3.naved .links,
+div.ccm-page header h4.naved .links {
+  float: right;
+}
+div.ccm-page header h1.naved .links nav.ht7-ws-ttt-nav-meta,
+div.ccm-page header h2.naved .links nav.ht7-ws-ttt-nav-meta,
+div.ccm-page header h3.naved .links nav.ht7-ws-ttt-nav-meta,
+div.ccm-page header h4.naved .links nav.ht7-ws-ttt-nav-meta {
+  float: right;
+  font-size: 0.75em;
+}
+div.ccm-page header h1.naved .links nav.ht7-ws-ttt-nav-meta ul,
+div.ccm-page header h2.naved .links nav.ht7-ws-ttt-nav-meta ul,
+div.ccm-page header h3.naved .links nav.ht7-ws-ttt-nav-meta ul,
+div.ccm-page header h4.naved .links nav.ht7-ws-ttt-nav-meta ul {
+  margin: 0;
+}
+div.ccm-page header h1.naved .links nav.ht7-ws-ttt-nav-meta ul li,
+div.ccm-page header h2.naved .links nav.ht7-ws-ttt-nav-meta ul li,
+div.ccm-page header h3.naved .links nav.ht7-ws-ttt-nav-meta ul li,
+div.ccm-page header h4.naved .links nav.ht7-ws-ttt-nav-meta ul li {
+  padding: 0;
+}
+div.ccm-page header h1.naved .links nav.ht7-ws-ttt-nav-meta ul li a,
+div.ccm-page header h2.naved .links nav.ht7-ws-ttt-nav-meta ul li a,
+div.ccm-page header h3.naved .links nav.ht7-ws-ttt-nav-meta ul li a,
+div.ccm-page header h4.naved .links nav.ht7-ws-ttt-nav-meta ul li a {
+  padding-right: 20px;
+}
+div.ccm-page #footer-theme {
+  display: none;
+}

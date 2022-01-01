@@ -1,0 +1,33 @@
+{
+    "name": "ht7/ht7_c5_ws_tictactoe",
+    "license": "GNU GPLv3",
+    "description": "A simple PHP websocket TicTacToe game for the concrete5 CMS.",
+    "type": "concrete5-package",
+    "keywords": ["concrete5", "package", "game", "websocket", "tictactoe"],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "archive": {
+        "exclude": [
+            "/tests", "/build"
+        ]
+    },
+    "authors": [
+        {
+            "name": "1stthomas",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/1stthomas/ht7-concrete5-ws-tictactoe"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:1stthomas/ht7-concrete5-ws-chat-simple.git"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "ht7/ht7_c5_ws_chat_simple": "dev-master"
+    }
+}
