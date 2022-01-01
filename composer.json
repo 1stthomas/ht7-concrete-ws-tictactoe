@@ -28,6 +28,6 @@
     ],
     "require": {
         "php": "^7.0",
-        "ht7/ht7_c5_ws_chat_simple": "dev-master"
+        "ht7/ht7_c5_ws_chat_simple": "^0.2"
     }
 }
